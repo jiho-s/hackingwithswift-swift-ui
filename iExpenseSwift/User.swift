@@ -6,7 +6,7 @@
 //  Copyright © 2020 jiho. All rights reserved.
 //
 import SwiftUI
-class User: ObservableObject {
-    @Published var firstName = "Bilbo"
-    @Published var lastName = "Baggins"
+struct User: Codable {
+    var firstName: String
+    var lastName: String
 }
