@@ -9,30 +9,31 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var numbers = [Int]()
-    @State private var currentNumber = 1
+    @ObservedObject var expenses = Expenses()
     var body: some View {
         NavigationView {
-            VStack {
-                List {
-                    ForEach(numbers, id: \.self) {
-                        Text("\($0)")
-                    }
-                .onDelete(perform: removeRows)
+            List {
+                ForEach(expenses.items, id: \.name) { item in
+                    Text(item.name)
                 }
-                
-                Button("Add Number") {
-                    self.numbers.append(self.currentNumber)
-                    self.currentNumber += 1
-                }
+            .onDelete(perform: removeItems)
             }
-        .navigationBarItems(leading: EditButton())
-        .navigationBarTitle(Text("hihi"))
+        .navigationBarTitle("iExpense")
+        .navigationBarItems(trailing:
+            Button(action: {
+                let expense = ExpenseItem(name: "Test", type: "Personal", amount: 5)
+                self.expenses.items.append(expense)
+            }){
+                Image(systemName: "plus")
+            }
+            )
         }
     }
-    func removeRows(at offsets: IndexSet) {
-        numbers.remove(atOffsets: offsets)
+    
+    func removeItems(at offsets: IndexSet) {
+        expenses.items.remove(atOffsets: offsets)
     }
+
 }
 
 struct ContentView_Previews: PreviewProvider {
