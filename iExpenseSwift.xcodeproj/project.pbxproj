@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13234273242B968E00A0FD99 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13234272242B968E00A0FD99 /* AddView.swift */; };
 		13C634632429C32F007CC7FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C634622429C32F007CC7FB /* AppDelegate.swift */; };
 		13C634652429C32F007CC7FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C634642429C32F007CC7FB /* SceneDelegate.swift */; };
 		13C634672429C32F007CC7FB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C634662429C32F007CC7FB /* ContentView.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13234272242B968E00A0FD99 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		13C6345F2429C32F007CC7FB /* iExpenseSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iExpenseSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13C634622429C32F007CC7FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13C634642429C32F007CC7FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				13C634622429C32F007CC7FB /* AppDelegate.swift */,
 				13C634642429C32F007CC7FB /* SceneDelegate.swift */,
 				13C634662429C32F007CC7FB /* ContentView.swift */,
+				13234272242B968E00A0FD99 /* AddView.swift */,
 				13C6347C242B2566007CC7FB /* ExpenseItem.swift */,
 				13C6347E242B2662007CC7FB /* Expenses.swift */,
 				13C634682429C333007CC7FB /* Assets.xcassets */,
@@ -154,6 +157,7 @@
 			files = (
 				13C6347F242B2662007CC7FB /* Expenses.swift in Sources */,
 				13C634632429C32F007CC7FB /* AppDelegate.swift in Sources */,
+				13234273242B968E00A0FD99 /* AddView.swift in Sources */,
 				13C6347D242B2566007CC7FB /* ExpenseItem.swift in Sources */,
 				13C634652429C32F007CC7FB /* SceneDelegate.swift in Sources */,
 				13C634672429C32F007CC7FB /* ContentView.swift in Sources */,
