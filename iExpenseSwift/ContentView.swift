@@ -9,21 +9,29 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject var user = User()
-    @State private var showingSheet = false
+    @State private var numbers = [Int]()
+    @State private var currentNumber = 1
     var body: some View {
-        Form {
-            Text("Your name is \(user.firstName) \(user.lastName).")
-
-            TextField("First name", text: $user.firstName)
-            TextField("Last name", text: $user.lastName)
-            Button("Show sheet") {
-                self.showingSheet.toggle()
+        NavigationView {
+            VStack {
+                List {
+                    ForEach(numbers, id: \.self) {
+                        Text("\($0)")
+                    }
+                .onDelete(perform: removeRows)
+                }
+                
+                Button("Add Number") {
+                    self.numbers.append(self.currentNumber)
+                    self.currentNumber += 1
+                }
             }
-            .sheet(isPresented: $showingSheet) {
-                SecondView(name: "@jiho")
-            }
+        .navigationBarItems(leading: EditButton())
+        .navigationBarTitle(Text("hihi"))
         }
+    }
+    func removeRows(at offsets: IndexSet) {
+        numbers.remove(atOffsets: offsets)
     }
 }
 
