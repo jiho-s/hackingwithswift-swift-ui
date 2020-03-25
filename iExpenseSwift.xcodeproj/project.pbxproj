@@ -15,6 +15,7 @@
 		13C6346F2429C333007CC7FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13C6346D2429C333007CC7FB /* LaunchScreen.storyboard */; };
 		13C634772429C499007CC7FB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C634762429C499007CC7FB /* User.swift */; };
 		13C63479242AE841007CC7FB /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C63478242AE841007CC7FB /* SecondView.swift */; };
+		13C6347B242AF8FE007CC7FB /* UserDefaultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C6347A242AF8FE007CC7FB /* UserDefaultsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		13C634702429C333007CC7FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13C634762429C499007CC7FB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		13C63478242AE841007CC7FB /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		13C6347A242AF8FE007CC7FB /* UserDefaultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				13C634642429C32F007CC7FB /* SceneDelegate.swift */,
 				13C634662429C32F007CC7FB /* ContentView.swift */,
 				13C63478242AE841007CC7FB /* SecondView.swift */,
+				13C6347A242AF8FE007CC7FB /* UserDefaultsView.swift */,
 				13C634762429C499007CC7FB /* User.swift */,
 				13C634682429C333007CC7FB /* Assets.xcassets */,
 				13C6346D2429C333007CC7FB /* LaunchScreen.storyboard */,
@@ -155,6 +158,7 @@
 				13C634772429C499007CC7FB /* User.swift in Sources */,
 				13C63479242AE841007CC7FB /* SecondView.swift in Sources */,
 				13C634632429C32F007CC7FB /* AppDelegate.swift in Sources */,
+				13C6347B242AF8FE007CC7FB /* UserDefaultsView.swift in Sources */,
 				13C634652429C32F007CC7FB /* SceneDelegate.swift in Sources */,
 				13C634672429C32F007CC7FB /* ContentView.swift in Sources */,
 			);
