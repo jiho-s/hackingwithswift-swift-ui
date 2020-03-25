@@ -10,12 +10,19 @@ import SwiftUI
 
 struct ContentView: View {
     @ObservedObject var user = User()
+    @State private var showingSheet = false
     var body: some View {
-        VStack {
+        Form {
             Text("Your name is \(user.firstName) \(user.lastName).")
 
             TextField("First name", text: $user.firstName)
             TextField("Last name", text: $user.lastName)
+            Button("Show sheet") {
+                self.showingSheet.toggle()
+            }
+            .sheet(isPresented: $showingSheet) {
+                SecondView()
+            }
         }
     }
 }
