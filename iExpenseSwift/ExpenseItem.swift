@@ -7,7 +7,7 @@
 //
 import SwiftUI
 // Identifiable 을 붙이면 ForEach에 id: \.id 부분을 없앨수 있다
-struct ExpenseItem: Identifiable {
+struct ExpenseItem: Identifiable, Codable {
     let id = UUID()
     let name: String
     let type: String
