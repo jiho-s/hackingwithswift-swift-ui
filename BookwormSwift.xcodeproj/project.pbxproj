@@ -16,6 +16,7 @@
 		1378771C243C096A0041031F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1378771A243C096A0041031F /* LaunchScreen.storyboard */; };
 		13787726243D56A60041031F /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13787725243D56A60041031F /* AddBookView.swift */; };
 		13F5AB36243D62D90055383E /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F5AB35243D62D90055383E /* RatingView.swift */; };
+		13F5AB38243D69F30055383E /* EmojiRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F5AB37243D69F30055383E /* EmojiRatingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		1378771D243C096A0041031F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13787725243D56A60041031F /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
 		13F5AB35243D62D90055383E /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		13F5AB37243D69F30055383E /* EmojiRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRatingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				13787713243C09670041031F /* ContentView.swift */,
 				13787725243D56A60041031F /* AddBookView.swift */,
 				13F5AB35243D62D90055383E /* RatingView.swift */,
+				13F5AB37243D69F30055383E /* EmojiRatingView.swift */,
 				13787715243C096A0041031F /* Assets.xcassets */,
 				1378771A243C096A0041031F /* LaunchScreen.storyboard */,
 				1378771D243C096A0041031F /* Info.plist */,
@@ -157,6 +160,7 @@
 			files = (
 				13787712243C09670041031F /* BookwormSwift.xcdatamodeld in Sources */,
 				1378770D243C09670041031F /* AppDelegate.swift in Sources */,
+				13F5AB38243D69F30055383E /* EmojiRatingView.swift in Sources */,
 				13787714243C09670041031F /* ContentView.swift in Sources */,
 				13F5AB36243D62D90055383E /* RatingView.swift in Sources */,
 				1378770F243C09670041031F /* SceneDelegate.swift in Sources */,

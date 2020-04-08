@@ -15,8 +15,19 @@ struct ContentView: View {
     @State private var showingAddScreen = false
     var body: some View {
         NavigationView {
-            Text("Count: \(books.count)")
-            .navigationBarTitle("Bookworm")
+            List(books, id: \.self) { book in
+                NavigationLink(destination: Text(book.title ?? "Unknown Title")) {
+                    EmojiRatingView(rating: book.rating)
+
+                    VStack(alignment: .leading) {
+                        Text(book.title ?? "Unknown Title")
+                            .font(.headline)
+                        Text(book.author ?? "Unknown Author")
+                            .foregroundColor(.secondary)
+                    }
+                }
+            }
+                .navigationBarTitle("Bookworm")
                 .navigationBarItems(trailing: Button(action:{
                     self.showingAddScreen.toggle()
                 }){
