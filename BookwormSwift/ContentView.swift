@@ -15,20 +15,23 @@ struct ContentView: View {
     @State private var showingAddScreen = false
     var body: some View {
         NavigationView {
-            List(books, id: \.self) { book in
-                NavigationLink(destination: DetailView(book: book)) {
-                    EmojiRatingView(rating: book.rating)
+            List {
+                ForEach(books, id: \.self) { book in
+                    NavigationLink(destination: DetailView(book: book)) {
+                        EmojiRatingView(rating: book.rating)
 
-                    VStack(alignment: .leading) {
-                        Text(book.title ?? "Unknown Title")
-                            .font(.headline)
-                        Text(book.author ?? "Unknown Author")
-                            .foregroundColor(.secondary)
+                        VStack(alignment: .leading) {
+                            Text(book.title ?? "Unknown Title")
+                                .font(.headline)
+                            Text(book.author ?? "Unknown Author")
+                                .foregroundColor(.secondary)
+                        }
                     }
                 }
+            .onDelete(perform: deletBooks)
             }
-                .navigationBarTitle("Bookworm")
-                .navigationBarItems(trailing: Button(action:{
+            .navigationBarTitle("Bookworm")
+            .navigationBarItems(leading: EditButton(), trailing: Button(action:{
                     self.showingAddScreen.toggle()
                 }){
                     Image(systemName: "plus")
@@ -37,6 +40,17 @@ struct ContentView: View {
                     AddBookView().environment(\.managedObjectContext, self.moc)
                 }
         }
+    }
+    
+    func deletBooks(at offsets: IndexSet) {
+        for offset in offsets {
+            let book = books[offset]
+            
+            moc.delete(book)
+            
+        }
+        
+        try? moc.save()
     }
 }
 
