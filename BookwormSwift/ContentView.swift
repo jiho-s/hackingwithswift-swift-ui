@@ -16,7 +16,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List(books, id: \.self) { book in
-                NavigationLink(destination: Text(book.title ?? "Unknown Title")) {
+                NavigationLink(destination: DetailView(book: book)) {
                     EmojiRatingView(rating: book.rating)
 
                     VStack(alignment: .leading) {

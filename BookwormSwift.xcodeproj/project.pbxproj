@@ -15,6 +15,7 @@
 		13787719243C096A0041031F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13787718243C096A0041031F /* Preview Assets.xcassets */; };
 		1378771C243C096A0041031F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1378771A243C096A0041031F /* LaunchScreen.storyboard */; };
 		13787726243D56A60041031F /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13787725243D56A60041031F /* AddBookView.swift */; };
+		1383052E243EDAB800004BCC /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1383052D243EDAB800004BCC /* DetailView.swift */; };
 		13F5AB36243D62D90055383E /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F5AB35243D62D90055383E /* RatingView.swift */; };
 		13F5AB38243D69F30055383E /* EmojiRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F5AB37243D69F30055383E /* EmojiRatingView.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,7 @@
 		1378771B243C096A0041031F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1378771D243C096A0041031F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13787725243D56A60041031F /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
+		1383052D243EDAB800004BCC /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		13F5AB35243D62D90055383E /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		13F5AB37243D69F30055383E /* EmojiRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRatingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,6 +69,7 @@
 				1378770C243C09670041031F /* AppDelegate.swift */,
 				1378770E243C09670041031F /* SceneDelegate.swift */,
 				13787713243C09670041031F /* ContentView.swift */,
+				1383052D243EDAB800004BCC /* DetailView.swift */,
 				13787725243D56A60041031F /* AddBookView.swift */,
 				13F5AB35243D62D90055383E /* RatingView.swift */,
 				13F5AB37243D69F30055383E /* EmojiRatingView.swift */,
@@ -159,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13787712243C09670041031F /* BookwormSwift.xcdatamodeld in Sources */,
+				1383052E243EDAB800004BCC /* DetailView.swift in Sources */,
 				1378770D243C09670041031F /* AppDelegate.swift in Sources */,
 				13F5AB38243D69F30055383E /* EmojiRatingView.swift in Sources */,
 				13787714243C09670041031F /* ContentView.swift in Sources */,
