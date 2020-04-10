@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftUI
+import CoreData
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -33,6 +34,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             self.window = window
             window.makeKeyAndVisible()
         }
+        
+        context.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
