@@ -6,7 +6,7 @@
 
 ## 목차
 
-1. [iExpense](#1.-iexpense)
+1. [iExpense](#1.-iexpense)
 
 ## 1. [iExpense](./iExpenseSwiftUI/README.md)
 
