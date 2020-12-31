@@ -10,6 +10,7 @@
 2. [Moonshot](#moonshot)
 3. [CupCakeCorner](#cupcakecorner)
 4. [Bookworm](#bookworm)
+5. [CoreDataPractice](#coredatapractice)
 
 ## [iExpense](./iExpenseSwiftUI)
 
@@ -50,6 +51,17 @@
 - @Binding
 - Core Data
 - @FetchRequest
+
+## [CoreDataPractice](./CoreDataPractice)
+
+> Custom managed object
+
+- NSManagedObject
+- Conditional saving
+- mergePolicy
+- ~~Filtering~~
+- ~~Dtnamically filtering~~
+- ~~One-to-many~~
 
 ## 정보
 
