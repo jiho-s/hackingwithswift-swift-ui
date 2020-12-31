@@ -9,8 +9,11 @@
 1. [iExpense](#iexpense)
 2. [Moonshot](#moonshot)
 3. [CupCakeCorner](#cupcakecorner)
+4. [Bookworm](#bookworm)
 
 ## [iExpense](./iExpenseSwiftUI)
+
+> UserDefaults에 데이터 저장하기
 
 - @ObservedObject
 - @Published
@@ -22,6 +25,8 @@
 
 ## [Moonshot](./MoonshotSwiftUI)
 
+> 파일에서 데이터 가져오기
+
 - GeometryReader
 - NavigationLink
 - ScrollView
@@ -32,9 +37,19 @@
 
 ## [CupcakeCorner](./CupcakeCornerSwift)
 
+> URLSeesion으로 데이터 가져오기
+
 - ObservableObject
 - Codable
 - URLSession
+
+## [Bookworm](./BookwormSwiftUI)
+
+> Core Data 에서 데이터 가져오기
+
+- @Binding
+- Core Data
+- @FetchRequest
 
 ## 정보
 
